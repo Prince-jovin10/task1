@@ -1,0 +1,220 @@
+.property-type-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.scrollable-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth; 
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scrollable-container::-webkit-scrollbar {
+    display: none; 
+}
+
+.property-card {
+    flex-shrink: 0; 
+    width: 250px; 
+    text-align: center;
+    scroll-snap-align: start;
+    padding: 15px;
+}
+
+.property-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.property-card p {
+    font-size: 26px;
+    color: #333;
+}
+
+/* Existing Media Queries */
+@media (max-width: 1920px) {
+    .property-card {
+        width: 250px;
+    }
+
+    .property-card img {
+        width: 250px;
+        height: 200px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .property-card {
+        width: 240px;
+    }
+
+    .property-card img {
+        width: 240px;
+        height: 190px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .property-card {
+        width: 200px;
+    }
+
+    .property-card img {
+        width: 200px;
+        height: 160px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .property-card {
+        width: 120px;
+        padding: 25px;
+    }
+
+    .property-card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .property-card p {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+    .property-card {
+        width: 100px;
+    }
+
+    .property-card img {
+        width: 70px;
+        height: 70px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 375px) {
+    .property-card {
+        width: 90px;
+    }
+
+    .property-card img {
+        width: 65px;
+        height: 65px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
+
+/* New Media Queries */
+@media (max-width: 320px) {
+    .property-card {
+        width: 80px; 
+        padding: 10px; 
+    }
+
+    .property-card img {
+        width: 60px; 
+        height: 60px; 
+    }
+
+    .property-card p {
+        font-size: 14px; 
+    }
+
+    h2 {
+        font-size: 14px; 
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .property-card {
+        width: 90px; 
+    }
+
+    .property-card img {
+        width: 70px; 
+        height: 70px; 
+    }
+
+    .property-card p {
+        font-size: 16px; 
+    }
+
+    h2 {
+        font-size: 16px; 
+    }
+}
+
+@media (min-width: 481px) and (max-width: 568px) {
+    .property-card {
+        width: 110px;
+    }
+
+    .property-card img {
+        width: 80px; 
+        height: 80px; 
+    }
+
+    .property-card p {
+        font-size: 18px; 
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 569px) and (max-width: 768px) {
+    .property-card {
+        width: 140px; 
+    }
+
+    .property-card img {
+        width: 100px; 
+        height: 100px; 
+    }
+
+    .property-card p {
+        font-size: 20px; 
+    }
+
+    h2 {
+        font-size: 20px; 
+    }
+}

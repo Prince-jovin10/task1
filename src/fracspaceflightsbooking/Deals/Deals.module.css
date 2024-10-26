@@ -1,0 +1,303 @@
+.dealsContainer {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dealsGrid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.dealsGrid::-webkit-scrollbar {
+    display: none;
+}
+
+.dealItem {
+    width: 200px; 
+    flex: 0 0 auto;
+    padding: 10px;
+    scroll-snap-align: start;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+.dealImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.dealInfo {
+    text-align: center;
+}
+
+.dealInfo h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.dealInfo p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 0.9rem;
+    color: #0071c2;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.newPrice {
+    color: #e63946;
+}
+
+.limitedTime {
+    color: #0071c2;
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1920px) {
+    .dealItem {
+        min-width: 280px;
+    }
+
+    .dealImage {
+        height: 150px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .dealsGrid {
+        gap: 20px;
+    }
+
+    .dealItem {
+        min-width: 260px;
+    }
+}
+
+@media (min-width:1024px) and  (max-width: 1440px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .dealsGrid {
+        gap: 20px;
+    }
+
+    .dealItem {
+        min-width: 260px;
+    }
+
+    .dealImage {
+        height: 150px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .dealsGrid {
+        gap: 18px;
+    }
+
+    .dealItem {
+        min-width: 240px;
+    }
+
+    .dealImage {
+        height: 140px;
+    }
+
+    .dealInfo h3 {
+        font-size: 1rem;
+    }
+
+    .dealInfo p {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+
+    .rating {
+        font-size: 0.85rem;
+    }
+}
+
+@media(min-width:601px) and (max-width: 768px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .dealsGrid {
+        gap: 15px;
+    }
+
+    .dealItem {
+        min-width: 220px;
+        padding: 10px;
+    }
+
+    .dealImage {
+        height: 130px;
+        width: 100%;
+    }
+
+    .dealInfo h3 {
+        font-size: 0.9rem;
+    }
+
+    .dealInfo p {
+        font-size: 0.85rem;
+    }
+
+    .price {
+        font-size: 0.9rem;
+    }
+
+    .rating {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width:600px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .dealItem {
+        min-width: 200px;
+        padding: 10px;
+    }
+
+    .dealImage {
+        height: 120px;
+        width: 100%;
+    }
+
+    .dealInfo h3 {
+        font-size: 0.85rem;
+    }
+
+    .dealInfo p {
+        font-size: 0.8rem;
+    }
+
+    .price {
+        font-size: 0.85rem;
+    }
+
+    .rating {
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .dealItem {
+        min-width: 180px;
+        padding: 8px;
+    }
+
+    .dealImage {
+        height: 110px;
+        width: 100%;
+    }
+
+    .dealInfo h3 {
+        font-size: 0.8rem;
+    }
+
+    .dealInfo p {
+        font-size: 0.75rem;
+    }
+
+    .price {
+        font-size: 0.8rem;
+    }
+
+    .rating {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .dealItem {
+        min-width: 160px;
+        padding: 8px;
+    }
+
+    .dealImage {
+        height: 100px;
+        width: 100%;
+    }
+
+    .dealInfo h3 {
+        font-size: 0.75rem;
+    }
+
+    .dealInfo p {
+        font-size: 0.7rem;
+    }
+
+    .price {
+        font-size: 0.75rem;
+    }
+
+    .rating {
+        font-size: 0.65rem;
+    }
+}

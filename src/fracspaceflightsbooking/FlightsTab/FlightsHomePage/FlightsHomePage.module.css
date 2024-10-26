@@ -1,0 +1,246 @@
+.searchContainer {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 950px;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.searchContainer:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.searchHeader {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #003580;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.searchSubHeader {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.radioButtons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.radioButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.radioButton:hover {
+  background-color: #f1f1f1;
+}
+
+.searchInputs {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  align-items: center;
+}
+
+.searchInput,
+.datePicker {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #FFC72C;
+  border-radius: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.searchInput:hover,
+.datePicker:hover {
+  border-color: #ffbb00;
+  box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.searchInputIcon,
+.datePickerIcon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.inputText {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+.searchButton {
+  background: linear-gradient(135deg, #0071c2, #005ea3);
+  color: #fff;
+  padding: 15px 35px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(0, 113, 194, 0.4);
+}
+
+.searchButton:hover {
+  background: linear-gradient(135deg, #005ea3, #004b85);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 113, 194, 0.5);
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1920px) {
+  .searchContainer {
+    max-width: 1200px;
+  }
+  .searchHeader {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .searchContainer {
+    max-width: 1000px;
+  }
+  .searchHeader {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .searchContainer {
+    max-width: 850px;
+  }
+  .searchHeader {
+    font-size: 1.8rem;
+  }
+  .searchButton {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    padding: 15px;
+    max-width: 700px;
+  }
+  .searchInputs {
+    flex-direction: column;
+  }
+  .searchButton {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/* New Media Queries for Requested Dimensions */
+
+/* For screens with width between 0px and 320px */
+@media (min-width: 0px) and (max-width: 320px) {
+  .searchContainer {
+    padding: 10px;
+    max-width: 95%;
+  }
+  .searchHeader {
+    font-size: 1.4rem;
+  }
+  .searchInputs {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .searchButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* For screens with width between 321px and 480px */
+@media (min-width: 321px) and (max-width: 480px) {
+  .searchContainer {
+    padding: 12px;
+    max-width: 90%;
+  }
+  .searchHeader {
+    font-size: 1.6rem;
+  }
+  .searchInputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .searchButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}
+
+/* For screens with width between 481px and 568px */
+@media (min-width: 481px) and (max-width: 568px) {
+  .searchContainer {
+    padding: 15px;
+    max-width: 85%;
+  }
+  .searchHeader {
+    font-size: 1.8rem;
+  }
+  .searchInputs {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .searchButton {
+    width: 100%;
+    padding: 13px;
+    font-size: 1rem;
+  }
+}
+
+/* For screens with width between 569px and 768px */
+@media (min-width: 569px) and (max-width: 768px) {
+  .searchContainer {
+    padding: 18px;
+    max-width: 80%;
+  }
+  .searchHeader {
+    font-size: 2rem;
+  }
+  .searchInputs {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .searchButton {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.05rem;
+  }
+}

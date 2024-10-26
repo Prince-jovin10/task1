@@ -1,0 +1,273 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #003580;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.search__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.search__input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 220px;
+}
+
+.search__button {
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.search__button:hover {
+    background-color: #005fa3;
+}
+
+.flights__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.flights__checkbox input {
+    margin-right: 10px;
+}
+
+.offers__section {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.offers__heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.offers__subheading {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.offers__cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.offer__card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 280px;
+    text-align: center;
+}
+
+.offer__card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.offer__card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.offer__button {
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.offer__button:hover {
+    background-color: #005fa3;
+}
+
+@media (max-width: 1920px) {
+    .heading {
+        font-size: 2.5rem; 
+    }
+
+    .search__input {
+        width: 240px; 
+    }
+
+    .offer__card {
+        width: 30%; 
+    }
+
+    .offers__heading {
+        font-size: 1.8rem; 
+    }
+}
+
+@media (max-width: 1440px) {
+    .heading {
+        font-size: 2.3rem; 
+    }
+
+    .search__input {
+        width: 210px; 
+    }
+
+    .offer__card {
+        width: 40%; 
+    }
+
+    .offers__heading {
+        font-size: 1.6rem; 
+    }
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+    .heading {
+        font-size: 2.2rem;
+    }
+
+    .search__input {
+        width: 200px;
+    }
+
+    .offer__card {
+        width: 45%;
+    }
+}
+
+@media (min-width:425px) and (max-width: 768px) {
+    .search__container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .offers__cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .offer__card {
+        margin-left: 15px;
+        width: 150px;
+        height: 310px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .offers__heading {
+        font-size: 1.5rem;
+    }
+
+    .search__input {
+        width: 180px;
+    }
+
+    .offer__button {
+        padding: 8px 16px;
+    }
+}
+
+@media  (max-width: 425px) {
+    .search__container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .offers__cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .subheading {
+        font-size: 1rem;
+    }
+
+    .search__input {
+        width: 160px;
+        padding: 8px;
+    }
+    .offer__card {
+        margin-left: 0px;
+        width: 150px;
+        height: 280px;
+    }
+    .offer__card h3 {
+        font-size: 1rem;
+    }
+
+    .offer__card p {
+        font-size: 0.9rem;
+    }
+
+    .offer__button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .heading {
+        font-size: 1.6rem;
+    }
+
+    .subheading {
+        font-size: 0.9rem;
+    }
+
+    .search__input {
+        width: 140px;
+    }
+
+    .offer__card h3 {
+        font-size: 0.9rem;
+        margin-left: 0px;
+    }
+
+    .offer__button {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+}

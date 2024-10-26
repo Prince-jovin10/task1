@@ -1,0 +1,161 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* General Media Queries */
+@media (max-width: 1920px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .title {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+    .card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .title {
+        font-size: 1.2em;
+    }
+}
+
+/* New Media Queries for Small Screens */
+@media (min-width: 0px) and (max-width: 320px) {
+    .container {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 1.1em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .card h3 {
+        margin-bottom: 8px;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 1.3em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .card h3 {
+        margin-bottom: 9px;
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 568px) {
+    .container {
+        width: 85%;
+    }
+
+    .title {
+        font-size: 1.4em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 15px;
+        border-radius: 9px;
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 569px) and (max-width: 768px) {
+    .container {
+        width: 85%;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        padding: 18px;
+        border-radius: 10px;
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        font-size: 1.3em;
+    }
+}

@@ -1,0 +1,202 @@
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 0px) and (max-width: 320px) {
+    .container {
+        padding: 10px;
+    }
+    .title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .cardTitle {
+        font-size: 14px;
+    }
+    .image {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .container {
+        padding: 12px;
+    }
+    .title {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .cardTitle {
+        font-size: 15px;
+    }
+    .image {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 568px) {
+    .container {
+        padding: 15px;
+    }
+    .title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .cardTitle {
+        font-size: 16px;
+    }
+    .image {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+@media (min-width: 569px) and (max-width: 768px) {
+    .container {
+        padding: 18px;
+    }
+    .title {
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+    .cardTitle {
+        font-size: 17px;
+    }
+    .image {
+        width: 95px;
+        height: 95px;
+    }
+}
+
+@media (max-width: 1920px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .cardTitle {
+        font-size: 16px;
+    }
+    .image {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        padding: 10px;
+    }
+    .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .cardTitle {
+        font-size: 14px;
+    }
+    .image {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 8px;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .cardTitle {
+        font-size: 13px;
+    }
+}
